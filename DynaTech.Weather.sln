@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynaTech.Weather.API", "DynaTech.Weather.API\DynaTech.Weather.API.csproj", "{6496C13A-C047-45E4-83ED-E680804A2EE0}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5395EE8B-8745-43AB-AC1B-9BAE5F37B9C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynaTech.Weather.Infrastructure", "DynaTech.Weather.Infrastructure\DynaTech.Weather.Infrastructure.csproj", "{77DDBF8D-6D5C-48DC-B810-68125ACDC7EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynaTech.Weather.Domain", "DynaTech.Weather.Domain\DynaTech.Weather.Domain.csproj", "{27222A06-8C93-404B-BFDC-575EB437CC5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{42D6E6EC-1FDF-43CB-8B0D-73CA7F6B9121}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynaTech.Weather.API.Tests", "DynaTech.Weather.API.Tests\DynaTech.Weather.API.Tests.csproj", "{D07CF7FB-F622-488C-889C-6B32F26E30F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynaTech.Weather.Infrastructure.Tests", "..\DynaTech.Weather.Infrastructure.Tests\DynaTech.Weather.Infrastructure.Tests.csproj", "{A1A609AC-0F95-435C-B6CB-7232D446447C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6496C13A-C047-45E4-83ED-E680804A2EE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6496C13A-C047-45E4-83ED-E680804A2EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6496C13A-C047-45E4-83ED-E680804A2EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6496C13A-C047-45E4-83ED-E680804A2EE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5395EE8B-8745-43AB-AC1B-9BAE5F37B9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5395EE8B-8745-43AB-AC1B-9BAE5F37B9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5395EE8B-8745-43AB-AC1B-9BAE5F37B9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5395EE8B-8745-43AB-AC1B-9BAE5F37B9C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77DDBF8D-6D5C-48DC-B810-68125ACDC7EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77DDBF8D-6D5C-48DC-B810-68125ACDC7EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77DDBF8D-6D5C-48DC-B810-68125ACDC7EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77DDBF8D-6D5C-48DC-B810-68125ACDC7EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27222A06-8C93-404B-BFDC-575EB437CC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27222A06-8C93-404B-BFDC-575EB437CC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27222A06-8C93-404B-BFDC-575EB437CC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27222A06-8C93-404B-BFDC-575EB437CC5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D07CF7FB-F622-488C-889C-6B32F26E30F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D07CF7FB-F622-488C-889C-6B32F26E30F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D07CF7FB-F622-488C-889C-6B32F26E30F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D07CF7FB-F622-488C-889C-6B32F26E30F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A609AC-0F95-435C-B6CB-7232D446447C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A609AC-0F95-435C-B6CB-7232D446447C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A609AC-0F95-435C-B6CB-7232D446447C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A609AC-0F95-435C-B6CB-7232D446447C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D07CF7FB-F622-488C-889C-6B32F26E30F5} = {42D6E6EC-1FDF-43CB-8B0D-73CA7F6B9121}
+		{A1A609AC-0F95-435C-B6CB-7232D446447C} = {42D6E6EC-1FDF-43CB-8B0D-73CA7F6B9121}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {350386E0-3D58-433E-B0D2-C97AAE86099F}
+	EndGlobalSection
+EndGlobal

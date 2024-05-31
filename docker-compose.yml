@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  dynatech.weather.api:
+    image: ${DOCKER_REGISTRY-}dynatechweatherapi
+    build:
+      context: .
+      dockerfile: DynaTech.Weather.API/Dockerfile
+    depends_on:
+      sqlserver:
+        condition: service_started
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: weather_sqlserver
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Rpassw!1
